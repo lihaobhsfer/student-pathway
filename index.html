@@ -23,20 +23,20 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">IDS Final - tudent Pathway</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">IDS Final - Student Pathway</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#questions">Explorations & Analyses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#quality">Data Quality</a>
             </li>
           </ul>
         </div>
@@ -45,16 +45,17 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+        <h1>How can we visualize learning pathways to help instructional designers make data driven decisions?</h1>
+        <p class="lead">Final Project - Interactive Data Science</p>
+        <p class="lead">Shivang Gupta,  Kexin Yang,  Hao Li</p>
       </div>
     </header>
 
-    <section id="about">
+    <section id="overview">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
+            <h2>Overview</h2>
             <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
             <ul>
               <li>Clickable nav links that smooth scroll to page sections</li>
@@ -67,23 +68,41 @@
       </div>
     </section>
 
-    <section id="services" class="bg-light">
+    <section id="questions" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer</h2>
+            <h2>Explorations & Analyses</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="quality">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2>About This Dataset</h2>
+              <h3>Accountability</h3>
+                <h4>Where does this data come from?</h4>
+                <p class="lead">This is student course interaction data that came from OLI through DataShop. It is for the course Introduction to Principles of Computing with Python, a blended learning course that has both online and offline components. This course is primarily for undergraduate students at CMU and the particular data that we are using is from the summer term of 2016.</p>
+                <p class="lead">To answer our questions, we combine two datasets, one is about student-performance which contains data about the individual scores, class mean and S.D. of scores on the different assessments, both online and offline. The other dataset is logs of student actions on OLI which can be used to analyze learning pathways.</p>
+                <p class="lead">Link for Edited Student Performance data: <a href=" https://drive.google.com/open?id=16oA5A81eRZ4EGMrvIcJFyscKY1wlLLGU " target="_blank">https://drive.google.com/open?id=16oA5A81eRZ4EGMrvIcJFyscKY1wlLLGU</a></p>
+                <p class="lead">Link for Combined Performance and Student Interaction data: <a href="https://drive.google.com/open?id=1tTeal-sFek3V_3kwilylNb6lJNp10B2k " target="_blank">https://drive.google.com/open?id=1tTeal-sFek3V_3kwilylNb6lJNp10B2k</a></p>
+              <h4>Who has access to it?</h4>
+                <p class="lead">The course data on OLI is on DataShop and stored as “private”, as such it can only be accessed after seeking permission from the owner, Norman Bier.</p>
+                <p class="lead">The student-performance data is confidential, only the instructor and administrators of the dataset have access to it. We had to ask for special permission to access this data and it was anonymized before we received it.</p>
+              <h3>Completeness: Is the data complete?</h3>
+                <p class="lead">The data is complete in the way that it can satisfy our need for answering the questions, which means it has the columns of: problem view, time spent (latency), first step, problem id, hint level, KC labels, and performance. However, within the particular student interactions, there are some missing values that occur due to OLI errors or student input errors. Further, this data also only covers one class from one semester and as such, is not a complete representation of the course.</p>
+                <p class="lead">During Exploratory Data analysis, we also discovered that only 28 out of the 55 students in the course had completed the post-test, so we decided to accumulate other performance data to measure learning such as the final exam which was completed by almost all students.</p>
+              <h3>Coherence: Is the data coherent?</h3>
+                <p class="lead">The data was not very coherent at first. But it has been cleaned by our team members. Firstly, we eliminated all the columns in the student-problem dataset that are not needed. We then read the student-problem dataset and the performance data into a pandas DataFrame. After that, we join the two dataset together on anonymous student id. Looking further into the data, we found a module on academic integrity and ethics with problems that are not relevant to the actual learning, thus we also dropped those rows. Finally, we dropped all rows that contain null values.</p>
+                <p class="lead">This processing has made the data cleaner and more coherent.</p>
+                <p class="lead">For the sankey diagram that shows student pathways to work properly, we had to further aggregate the data. This process might cause the quality to slightly suffer. However, other analyses are performed with the high-quality, cleaned dataset.</p>
+              <h3>Correctness: Is the data correct?</h3>
+                <p class="lead">The data is correct because all transaction and students behavior, including each step they take, how much time it take for them to do each problem, and their hint-asking behaviors are accurately recorded down by the Datashop automatically, minimizing the possibility of human error. By comparing OLI scores and completion rates with performance data we were further able to check the validity of the data.</p>
+                <p class="lead">We verified this correctness by plotting a number of graphs and validating discrete statistics such as averages and ranges of scores, etc. A detailed discussion of this processing is available in the Exploratory Analysis section below.</p>
           </div>
         </div>
       </div>
@@ -92,7 +111,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; IDS Student Pathway 2018</p>
       </div>
       <!-- /.container -->
     </footer>
