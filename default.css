@@ -1,6 +1,7 @@
 	html, body
 	{
 		height: 100%;
+		-ms-scroll-chaining: none;
 	}
 	
 	body
@@ -18,13 +19,14 @@
 	h1, h2, h3
 	{
 		margin: 0;
-		margin-top: 1em;
+		margin: 2em 0 1em;
 		padding: 0;
 	}
 	
 	p, ol, ul
 	{
 		margin-top: 0;
+		font-size: 1.2em;
 	}
 	
 	ol, ul
@@ -150,11 +152,11 @@
 		color: #FFFFFF;
 	}
 	
-	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+	/* ul.contact li a.icon-twitter:before { background: #2DAAE4; }
 	ul.contact li a.icon-facebook:before { background: #39599F; }
 	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
 	ul.contact li a.icon-tumblr:before { background: #31516A; }
-	ul.contact li a.icon-rss:before { background: #F2600B; }
+	ul.contact li a.icon-rss:before { background: #F2600B; } */
 
 /*********************************************************************************/
 /* Button Style                                                                  */
@@ -220,8 +222,9 @@
 
 	.boxX
 	{
-		width: 70%;
+		width: 75%;
 		margin-left: 15%;
+		text-align: left;
 	}
 
 	.boxSpan{
@@ -235,6 +238,7 @@
 	{
 		float: left;
 		margin-right: 20px;
+		
 	}
 	
 	.boxP
@@ -319,6 +323,7 @@
 	#header
 	{
 		padding: 2em 0em;
+		
 	}
 
 /*********************************************************************************/
@@ -334,6 +339,7 @@
 	
 	#logo h1
 	{
+		margin: 0.8em auto;
 		font-size: 2.6em;
 		color: #79C255;
 	}
@@ -398,6 +404,7 @@
 
 	#banner
 	{
+		width: 100vw;
 		margin-top: 6em;
 		padding-top: 4em;
 		text-align: center;
@@ -445,8 +452,12 @@
 	#exploratory
 	{
 		position: relative;
-		padding: 5em 0em 7em 0em;
+		padding: 3em 0em 7em 0em;
 		background: #FFF;
+	}
+
+	.tableauPlaceholder {
+		margin: 2em auto;
 	}
 
 /*********************************************************************************/
@@ -497,7 +508,7 @@
 	#welcome
 	{
 		position: relative;
-		padding: 7em 0em 7em 0em;
+		padding: 3em 0em 7em 0em;
 		background: #111111 url(images/header-bg.png) no-repeat center;
 		background-size: cover;
 		text-align: center;

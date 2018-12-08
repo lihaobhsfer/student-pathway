@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>OG</title>
+  <title>Sankey Diagram</title>
   <style>
 
     body {
@@ -34,6 +34,7 @@
   </style>
 </head>
 <body>
+  <h1>D3.js Sankey Diagram to visualize flow of students through Summer 2016 course at a macro level</h1>
 
 <div id="data-set-select"></div>
 <div id="chart"></div>
@@ -44,8 +45,8 @@
 
   // Some setup stuff.
   var margin = {top: 90, right: 20, bottom: 20, left: 80};
-  var width = 2260 - margin.left - margin.right;
-  var height = 950 - margin.top - margin.bottom;
+  var width = 1800 - margin.left - margin.right;
+  var height = 800 - margin.top - margin.bottom;
   var color = d3.scale.category20();
   var clicked = false;
 
