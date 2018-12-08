@@ -381,10 +381,11 @@ Released   : 20140228
 					their counts in tooltips and hovering over nodes will highlight all source links to that node. Clicking on a node
 					will allow you to highlight all target links that go out from that node. Link highlights can be reset by clicking
 					any node. <br /><br />
-					By visualizing the different clusters of paths, students can be categorized based on their completion behavior.
+					<!-- By visualizing the different clusters of paths, students can be categorized based on their completion behavior.
 					From our analysis we found that, generall speaking, there will be one thick central path that most students will
 					follow, a small splinter cell of advanced students who will split early from the group to skip the introductory
-					lessons and a very small group of high effort students who will approach all modules. <br> The
+					lessons and a very small group of high effort students who will approach all modules. <br> 
+					The -->
 
 					<p style="text-align:left; width: 70%;margin-left:15%;"><strong>D3.js Sankey Diagram to visualize flow of students
 							through <strong>Summer 2016</strong> course at a macro level:</strong></p>
@@ -398,7 +399,7 @@ Released   : 20140228
 						Following the general pattern, there is clear group of students who follow the recommended path as shown by the
 						thick link. At the top left of the graph it is also easy to see a number of advanced students who skip the
 						introduction lessons on loops and lists. Nodes which are small and pushed to the side like concurrency, common
-						errors and logic are also key aareas for intervention as not enough students are attempting these modules.<br />
+						errors and logic are also key aareas for intervention as not enough students are attempting these modules.<br><br>
 						Another interesting insight from this visualization is the idea that making decisions is linked to different
 						previous modules and being a complicated module results in students going back to other modules to recap as shown
 						by the large number of backwards links. The recommended intervention in this case would be to examine the
@@ -424,7 +425,7 @@ Released   : 20140228
 						In this version of the Sankey flow, we can see that there are far fewer modules and transactions in the Spring as
 						compared to summer. However, we can see two clear splits in the paths and can see that there are mny back links
 						into Iteration, meaning it probably need to be improved to promote far learning. <br>
-						Student attrition is also very clearly visible in this Sankey.
+						<strong>Student attrition is also very clearly visible in this Sankey.</strong>
 
 					</p>
 					<div style="width: 100%;">
@@ -446,9 +447,9 @@ Released   : 20140228
 						the abundance of links. Once again we immediately see the large link of students returning to the making
 						decisions module, hoghlighting that it is an area for improvement, even across terms. <br> Like we saw in the
 						summer, there is one clear path most students follow, an early group that skips introduction slides and
-						atttrition is clear. <br>
+						atttrition is clear. <br><br>
 						What is also obeserved is that many students skipped the post test and also the mid modules like Recursion, Data
-						Representation and Encryption which show as very small nodes. <br />
+						Representation and Encryption which show as very small nodes. <br /><br>
 
 						As before, instructional designers should consider Scaffolding the course so that novice learners and advanced
 						learners can both take advatage of the online class.
@@ -500,26 +501,6 @@ Released   : 20140228
 					<script type='text/javascript'>                    var divElement = document.getElementById('viz1544304118483'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 
-					<!-- 
-
-					<div class='tableauPlaceholder' id='viz1544283492092' style='position: relative'><noscript><a href='#'><img alt=' '
-								 src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Python_1&#47;Sheet7&#47;1_rss.png'
-								 style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-							<param name='embed_code_version' value='3' />
-							<param name='site_root' value='' />
-							<param name='name' value='IDS-Python_1&#47;Sheet7' />
-							<param name='tabs' value='no' />
-							<param name='toolbar' value='yes' />
-							<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Python_1&#47;Sheet7&#47;1.png' />
-							<param name='animate_transition' value='yes' />
-							<param name='display_static_image' value='yes' />
-							<param name='display_spinner' value='yes' />
-							<param name='display_overlay' value='yes' />
-							<param name='display_count' value='yes' /></object></div>
-					<script type='text/javascript'>                    var divElement = document.getElementById('viz1544283492092'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
-
-
 					<p style="text-align:left; width: 70%;margin-left:15%;">
 						<br>
 
@@ -534,29 +515,29 @@ Released   : 20140228
 						<br>
 
 						<strong>Insights:</strong><br>
-						<ol style="text-align:left; width: 70%;margin-left:15%;">
-							<li>
+						<div style="text-align:left; width: 70%;margin-left:15%;">
+							<p>
 								1) Low achieving students started struggling very early, on their first course module- For loops. (The third
 								block on the graph, because the first two block are introduction and pretest). We can see from the brown block
 								that showed for low achieving students, these are much longer, which means they have been visiting that for
 								loops module a lot of times. This early struggling shows they are struggling, and may indicate that they may
 								not do as well as others. So educators can take this as a sign, and give timely help to these struggling
 								students who are using more time than others.
-							</li><br>
-							<li>
+							</p><br>
+							<p>
 								2) High achieving students (judging from the total- final performance), tend to do more modules. As we can see
 								from the visual, in the upper part, there are more colorful blocks, which means these students visited modules
 								more completely. We can also see that the time they take are more balanced. While if you look at the
 								low-achieving students, you can see that there are more white space in their pathways, which means they have
 								missed a lot of modules. This can lead to drop in their final performance. Also, as you can see from the
 								graphics, the time use of low-achieving students are not as balanced as high-achieving ones. There tend to be
-								some really long blocks, which could possibly mean that they are struggling.</li>
-							<li><br>
+								some really long blocks, which could possibly mean that they are struggling.</p>
+							<p><br>
 								3) However, there are also some anomaly, such as the one low-achieving student who scored 70 but did almost all
 								modules. This could be a indicator of wheel-spinning.<br /><br />
-							</li>
+							</p>
 
-						</ol>
+						</div>
 
 					</p>
 					<div style="width: 100%;">
@@ -616,8 +597,8 @@ Released   : 20140228
 						<br>
 
 						<strong>Evaluation and Insights:</strong><br>
-						<ol style="text-align:left; width: 70%;margin-left:15%;">
-							<li>This is not a transparent visualization, and probably also not too self-explanatory. But it has its
+						<div style="text-align:left; width: 70%;margin-left:15%;">
+							<p>This is not a transparent visualization, and probably also not too self-explanatory. But it has its
 								advantage
 								in that:<br /> <br />
 								1) It is showing four variables at the same time: <br />
@@ -625,23 +606,23 @@ Released   : 20140228
 								&nbsp;&nbsp;&nbsp;&nbsp; b) normalized error<br />
 								&nbsp;&nbsp;&nbsp;&nbsp; c) final performance <br />
 								&nbsp;&nbsp;&nbsp;&nbsp; d) problem name. <br />
-								Therefore it is a very comprehensive graphic which has a lot of information in it.</li><br />
-							<li>2) It can visualize everybody’s final performance in a very conspicuous way: by using red and green. The
+								Therefore it is a very comprehensive graphic which has a lot of information in it.</p><br />
+							<p>2) It can visualize everybody’s final performance in a very conspicuous way: by using red and green. The
 								darker the green, means the students performed better. The darker the red, means the students perform worse.
 								This is correlated with our common sense that red signals warning, risks and green signals passing and safety.
 								Therefore, from the graphics, we can easily see which students are not performing well. And which particular
-								module are they struggling with.</li>
-							<li>3) One example to understand how to use this visualization would be student with id AE. The large size of
+								module are they struggling with.</p>
+							<p>3) One example to understand how to use this visualization would be student with id AE. The large size of
 								squares for this student shows the completion rate is high. However, we can see from the axis that the total
 								score for this student is poor (around 72% which is well below class average). <br>Upon examining the
 								visualization we can see that this is due to the fact that the student has a very high error rate and is
 								attempting questions incorrectly at a high frequency. We can then use the visualization to pinpoint the areas
-								that the student needs to improve in such as Time-Efficiency, Encryption and Lists. </li>
-							<li>4) Another way to use this visualization is to examine a particular module across students. For example: The
+								that the student needs to improve in such as Time-Efficiency, Encryption and Lists. </p>
+							<p>4) Another way to use this visualization is to examine a particular module across students. For example: The
 								Time-efficiency module is clearly very troublesome for low scoring students while high scoring students tend to
 								not make errors on practice problems for this module. On the other hand the Encryption module seems to be hard
-								for everyone and would require some re-evaluation to understand why. </li>
-						</ol>
+								for everyone and would require some re-evaluation to understand why. </p>
+							</div>
 
 
 					</p>
@@ -783,10 +764,8 @@ Released   : 20140228
 						Evaluation:<strong> The time spent on questions is not a good indicator of performance in any way. This is
 							interesting as one would expect time spent to be directly correlated with completion rate, which is not the case
 							at all. </strong> <br />
-						Conclusion:<strong> Keep null hypothesis. Students’ time spent is not correlated with students’ final
+						Conclusion:<strong> Accept null hypothesis. Students’ time spent is not correlated with students’ final
 							performance.</strong>
-
-
 					</p><br /><br />
 				</p>
 
